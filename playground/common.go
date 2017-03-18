@@ -18,7 +18,7 @@ import (
 const baseURL = "https://golang.org"
 
 func init() {
-	http.HandleFunc("/compile", bounce)
+	http.HandleFunc("/compile", compileHandler)
 	http.HandleFunc("/share", bounce)
 }
 
